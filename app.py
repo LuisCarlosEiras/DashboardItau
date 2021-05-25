@@ -54,6 +54,9 @@ mensagem.text('Carregando os dados...Concluído!')
 st.subheader('Visualização dos Dados Brutos')
 st.write(dados.tail())
 
+# Fonte
+st.subheader('Fonte: https://finance.yahoo.com/most-active')
+
 # Função para o plot dos dados brutos
 def plot_dados_brutos():
 	fig = go.Figure()
@@ -64,9 +67,6 @@ def plot_dados_brutos():
 	
 # Executa a função
 plot_dados_brutos()
-
-# Fonte
-st.subheader('Fonte: https://finance.yahoo.com/most-active')
 
 st.subheader('Previsões com Machine Learning')
 
