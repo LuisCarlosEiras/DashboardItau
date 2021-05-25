@@ -105,6 +105,8 @@ st.subheader('Previsão de Preço dos Ativos Financeiros Para o Período Selecio
 grafico2 = plot_plotly(modelo, forecast)
 st.plotly_chart(grafico2)
 
+# Referências
+st.text('Referência: Mini Projeto 2, Data App, Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros, Curso Visualização de Dados e Design de Dashboards, Data Science Academy')
 # Fim
 
 
