@@ -24,7 +24,7 @@ st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativ
 
 # Define o código das empresas para coleta dos dados de ativos financeiros
 # https://finance.yahoo.com/most-active
-empresas = ('PBR', 'GOOG', 'UBER', 'PFE')
+empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB')
 
 # Define de qual empresa usaremos os dados por vez
 empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
