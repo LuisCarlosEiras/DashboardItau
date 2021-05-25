@@ -1,4 +1,4 @@
-# Mini-Projeto 2 - Data App - Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros
+# Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros das empresas Itaú, Vale, Gerdau, Uber, Google, Petrobras e Pfizer
 
 # Imports
 import numpy as np
@@ -20,7 +20,7 @@ HOJE = date.today().strftime("%Y-%m-%d")
 
 # Define o título do Dashboard
 st.title("Mini-Projeto 2 - Data App")
-st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros")
+st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros das empresas Itaú, Vale, Gerdau, Uber, Google, Petrobras e Pfizer")
 
 # Define o código das empresas para coleta dos dados de ativos financeiros
 # https://finance.yahoo.com/most-active
