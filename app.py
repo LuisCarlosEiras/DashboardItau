@@ -27,7 +27,10 @@ st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativ
 empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB')
 
 # Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros - ITUB, Itaú, GGC, Gerdal, PBR, Petrobras, PFG, Pfizer'), empresas)
+empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros - ITUB, Itaú, GGC, Gerdal, PBR, Petrobras, PFG, Pfizer', empresas)
+
+# Define de qual empresa usaremos os dados por vez
+# empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
 
 # st.selectbox('ITUB: Itaú, GGC: Gerdal, PBR: Petrobras, PFG: Pfizer')
 
