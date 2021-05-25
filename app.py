@@ -1,4 +1,4 @@
-# Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros
+# Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros do Itaú
 
 #!/usr/bin/env python
 # coding: utf-8
