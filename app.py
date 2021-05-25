@@ -75,7 +75,7 @@ modelo = Prophet()
 modelo.fit(df_treino)
 
 # Define o horizonte de previsão
-num_anos = st.slider('Horizonte de Previsão (em anos):', 1, 4)
+num_anos = st.slider('Horizonte de Previsão (de 1 a 4 anos):', 1, 4)
 
 # Calcula o período em dias
 periodo = num_anos * 365
