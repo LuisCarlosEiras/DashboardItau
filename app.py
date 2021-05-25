@@ -27,9 +27,9 @@ st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativ
 empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB')
 
 # Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
+empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros: ITUB(Itaú), GGC(Gerdal), PBR(Petrobras), PFG(Pfizer)', empresas)
 
-st.subheader('ITUB: Itaú, GGC: Gerdal, PBR: Petrobras, PFG: Pfizer')
+st.selectbox('ITUB: Itaú, GGC: Gerdal, PBR: Petrobras, PFG: Pfizer')
 
 # Função para extrair e carregar os dados
 @st.cache
@@ -75,7 +75,7 @@ modelo = Prophet()
 modelo.fit(df_treino)
 
 # Define o horizonte de previsão
-num_anos = st.slider('Horizonte de Previsão (de 1 a 4 anos):', 1, 4)
+num_anos = st.slider('Horizonte de Previsão (em anos):', 1, 4)
 
 # Calcula o período em dias
 periodo = num_anos * 365
