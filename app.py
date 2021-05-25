@@ -29,37 +29,6 @@ empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB')
 # Define de qual empresa usaremos os dados por vez
 empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
 
-# Mini-Projeto 2 - Data App - Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros
-
-# Imports
-import numpy as np
-import yfinance as yf
-import streamlit as st
-import matplotlib.pyplot as plt
-from fbprophet import Prophet
-from fbprophet.plot import plot_plotly
-from plotly import graph_objs as go
-from datetime import date
-import warnings
-warnings.filterwarnings("ignore")
-
-# Define a data de início para coleta  de dados
-INICIO = "2015-01-01"
-
-# Define a data de fim para coleta de dados (data de hoje, execução do script)
-HOJE = date.today().strftime("%Y-%m-%d")
-
-# Define o título do Dashboard
-st.title("Mini-Projeto 2 - Data App")
-st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros")
-
-# Define o código das empresas para coleta dos dados de ativos financeiros
-# https://finance.yahoo.com/most-active
-empresas = ('PBR', 'GOOG', 'UBER', 'PFE')
-
-# Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
-
 st.subheader('ITUB: Itaú, GGC: Gerdal, PBR: Petrobras, PFG: Pfizer')
 
 # Função para extrair e carregar os dados
