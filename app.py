@@ -1,10 +1,4 @@
-# Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros do Itaú
-
-#!/usr/bin/env python
-# coding: utf-8
-
-import gc
-gc.collect()
+# Mini-Projeto 2 - Data App - Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros
 
 # Imports
 import numpy as np
@@ -25,14 +19,15 @@ INICIO = "2015-01-01"
 HOJE = date.today().strftime("%Y-%m-%d")
 
 # Define o título do Dashboard
-st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros do Itaú")
+st.title("Mini-Projeto 2 - Data App")
+st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros")
 
 # Define o código das empresas para coleta dos dados de ativos financeiros
 # https://finance.yahoo.com/most-active
-empresas = ('ITUB')
+empresas = ('PBR', 'GOOG', 'UBER', 'PFE')
 
 # Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Itaú', empresas)
+empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
 
 # Função para extrair e carregar os dados
 @st.cache
@@ -53,9 +48,6 @@ mensagem.text('Carregando os dados...Concluído!')
 # Sub-título
 st.subheader('Visualização dos Dados Brutos')
 st.write(dados.tail())
-
-# Fonte
-st.subheader('Fonte: https://finance.yahoo.com/most-active')
 
 # Função para o plot dos dados brutos
 def plot_dados_brutos():
@@ -81,7 +73,7 @@ modelo = Prophet()
 modelo.fit(df_treino)
 
 # Define o horizonte de previsão
-num_anos = st.slider('Horizonte de Previsão (de 1 a 4 anos):', 1, 4)
+num_anos = st.slider('Horizonte de Previsão (em anos):', 1, 4)
 
 # Calcula o período em dias
 periodo = num_anos * 365
