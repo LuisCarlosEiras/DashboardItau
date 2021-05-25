@@ -65,6 +65,9 @@ def plot_dados_brutos():
 # Executa a função
 plot_dados_brutos()
 
+# Fonte
+st.subheader('Fonte: https://finance.yahoo.com/most-active')
+
 st.subheader('Previsões com Machine Learning')
 
 # Prepara os dados para as previsões com o pacote Prophet
