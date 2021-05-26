@@ -106,7 +106,8 @@ grafico2 = plot_plotly(modelo, forecast)
 st.plotly_chart(grafico2)
 
 # Referências
-st.write("""Referência: \n Mini Projeto 2, Data App, Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros, 
+st.write("""Referência: 
+Mini Projeto 2, Data App, Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros, 
 Capítulo 5 - Visualização de Dados e Dashboards com Python, Curso Visualização de Dados e Design de Dashboards, Data Science Academy.""")
 
 # Fim
