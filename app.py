@@ -20,14 +20,14 @@ HOJE = date.today().strftime("%Y-%m-%d")
 
 # Define o título do Dashboard
 # st.title("Mini-Projeto 2 - Data App")
-st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros das empresas Itaú, Vale, Gerdau, Uber, Google, Petrobras e Pfizer")
+st.title("Dashboard Financeiro Interativo e em Tempo Real Para Previsão de Ativos Financeiros das empresas Itaú, Vale, Gerdau, Uber, Google, Petrobras. Coca-Cola e Pfizer")
 
 # Define o código das empresas para coleta dos dados de ativos financeiros
 # https://finance.yahoo.com/most-active
-empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB')
+empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB','KO')
 
 # Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros: ITUB (Itaú), GGC (Gerdal), PBR (Petrobras), PFG (Pfizer)', empresas)
+empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros: ITUB (Itaú), GGC (Gerdal), PBR (Petrobras), KO(Coca-Cola), PFG (Pfizer)', empresas)
 
 # Define de qual empresa usaremos os dados por vez
 # empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
