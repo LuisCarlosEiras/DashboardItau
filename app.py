@@ -55,7 +55,7 @@ st.subheader('Visualização dos Dados Brutos')
 st.write(dados.tail())
 
 # Fonte
-st.subheader('Fonte: https://finance.yahoo.com/most-active')
+# st.subheader('Fonte: https://finance.yahoo.com/most-active')
 
 # Função para o plot dos dados brutos
 def plot_dados_brutos():
@@ -99,7 +99,7 @@ st.subheader('Dados Previstos')
 st.write(forecast.tail())
     
 # Título
-st.subheader('Previsão de Preço dos Ativos Financeiros Para o Período Selecionado')
+st.subheader('Previsão de entrega da mercado a partir do hash')
 
 # Plot
 grafico2 = plot_plotly(modelo, forecast)
