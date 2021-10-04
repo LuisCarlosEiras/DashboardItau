@@ -2,7 +2,7 @@
 
 ![Alysyda](alysida.jpg)
 
-!(previsão de entrega.jpg)
+![previsa](previsa.jpg)
 
 Pode ser visto em shorturl.at/dlCHV.
 
