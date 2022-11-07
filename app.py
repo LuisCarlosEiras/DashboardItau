@@ -98,7 +98,7 @@ st.subheader('Dados Previstos')
 st.write(forecast.tail())
     
 # Título
-st.subheader('Previsão de entrega da mercadoria a partir do hash')
+st.subheader('Previsão do valor das ações')
 
 # Plot
 grafico2 = plot_plotly(modelo, forecast)
