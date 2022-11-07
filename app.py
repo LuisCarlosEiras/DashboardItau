@@ -1,4 +1,4 @@
-# Projeto Alysida. Previsão de entrega da cadeia de suprimentos. 
+# Previsão de ações. 
 
 # Imports
 import numpy as np
