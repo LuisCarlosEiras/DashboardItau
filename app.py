@@ -26,7 +26,7 @@ st.title("Prevendo algumas ações")
 empresas = ('PBR', 'GOOG', 'UBER', 'PFE', 'VALE', 'GGB', 'ITUB','KO')
 
 # Define de qual empresa usaremos os dados por vez
-empresa_selecionada = st.selectbox('Selecione o hash', empresas)
+empresa_selecionada = st.selectbox('Selecione o hash: Petrobras, Google, Uber, Pfizer, Vale, Gerdau, Itaú Unibanco ou Coca-Cola', empresas)
 
 # Define de qual empresa usaremos os dados por vez
 # empresa_selecionada = st.selectbox('Selecione a Empresa Para as Previsões de Ativos Financeiros:', empresas)
