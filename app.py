@@ -61,7 +61,7 @@ def plot_dados_brutos():
 	fig = go.Figure()
 	fig.add_trace(go.Scatter(x = dados['Date'], y = dados['Open'], name = "stock_open"))
 	fig.add_trace(go.Scatter(x = dados['Date'], y = dados['Close'], name = "stock_close"))
-	fig.layout.update(title_text = 'Preço de Abertura e Fechamento das Ações', xaxis_rangeslider_visible = True)
+	fig.layout.update(title_text = 'Preço de Abertura e Fechamento das Ações, de 01/01/2015 até hoje', xaxis_rangeslider_visible = True)
 	st.plotly_chart(fig)
 	
 # Executa a função
