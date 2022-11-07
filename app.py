@@ -1,4 +1,6 @@
-# Previsão de ações. 
+# Sub-título
+st.subheader('Visualização dos Dados Brutos')
+st.write(dados.tail()) 
 
 # Imports
 import numpy as np
