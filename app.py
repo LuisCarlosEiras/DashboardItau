@@ -19,7 +19,7 @@ HOJE = date.today().strftime("%Y-%m-%d")
 
 # Define o título do Dashboard
 # st.title("Mini-Projeto 2 - Data App")
-st.title("Projeto Alysida. Previsão de entrega da cadeia de suprimentos")
+st.title("Prevendo algumas ações")
 
 # Define o código das empresas para coleta dos dados de ativos financeiros
 # https://finance.yahoo.com/most-active
