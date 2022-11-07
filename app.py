@@ -54,7 +54,7 @@ st.subheader('Visualização dos Dados Brutos')
 st.write(dados.tail())
 
 # Fonte
-# st.subheader('Fonte: https://finance.yahoo.com/most-active')
+st.subheader('Fonte: https://finance.yahoo.com/most-active')
 
 # Função para o plot dos dados brutos
 def plot_dados_brutos():
