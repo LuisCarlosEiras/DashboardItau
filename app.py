@@ -1,4 +1,4 @@
-Previsão de ações. 
+# Previsão de ações. 
 
 # Imports
 import numpy as np
